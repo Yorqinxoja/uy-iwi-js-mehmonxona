@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hotel Registration Program</h1>
+    
+    <form id="registrationForm">
+        <h2>Add Reservation</h2>
+        <label for="guestName">Guest Name:</label>
+        <input type="text" id="guestName" required>
+        
+        <label for="roomNumber">Room Number:</label>
+        <select id="roomNumber"></select>
+        
+        <button type="submit">Add Reservation</button>
+    </form>
+
+    <form id="updateForm" style="display: none;">
+        <h2>Update Reservation</h2>
+        <label for="updateGuestName">Guest Name:</label>
+        <input type="text" id="updateGuestName" required>
+        
+        <label for="updateRoomNumber">Room Number:</label>
+        <select id="updateRoomNumber"></select>
+        
+        <button type="submit">Update Reservation</button>
+        <button type="button" id="cancelUpdate">Cancel</button>
+    </form>
+
+    <h2>Current Reservations</h2>
+    <ul id="reservationList"></ul>
+    
+    <script src="./script/app.js"></script>
+</body>
+</html>
